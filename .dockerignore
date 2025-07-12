@@ -1,0 +1,8 @@
+# Ignore these files/folders:
+node_modules/
+.git/
+.gitignore
+.env
+*.md
+.DS_Store
+docker-compose.yml
