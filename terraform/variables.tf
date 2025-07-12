@@ -1,4 +1,8 @@
-variable "image_uri" {}
+variable "image_uri" {
+  description = "ECR image URI"
+}
+
 variable "db_password" {
-  sensitive = true
+  description = "Database password"
+  sensitive   = true
 }
