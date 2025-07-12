@@ -52,9 +52,9 @@ jobs:
       run: terraform init -input=false
       working-directory: ./terraform
 
-    - name: Terraform Import ECR Repository
-      run: terraform import aws_ecr_repository.app medusa-app || echo "ECR already managed"
-      working-directory: ./terraform  
+    #- name: Terraform Import ECR Repository
+     # run: terraform import aws_ecr_repository.app medusa-app || echo "ECR already managed"
+     # working-directory: ./terraform  
 
     - name: Terraform Apply
       run: terraform apply -auto-approve -input=false
