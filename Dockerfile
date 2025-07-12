@@ -1,13 +1,4 @@
-FROM medusajs/medusa:latest
-
-WORKDIR /app
-
-COPY package*.json ./
-COPY yarn.lock ./
-
-RUN yarn install
-
-COPY . .
+FROM docker.io/medusajs/medusa:latest
 
 EXPOSE 9000
 
