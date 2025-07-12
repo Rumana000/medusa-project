@@ -17,6 +17,10 @@ data "aws_subnets" "default" {
 # 1. ECR Repository
 resource "aws_ecr_repository" "app" {
   name = "medusa-app"
+
+  lifecycle {
+    ignore_changes = [name]
+  }
 }
 
 # 2. Database
