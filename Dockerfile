@@ -1,0 +1,14 @@
+FROM medusajs/medusa:latest
+
+WORKDIR /app
+
+COPY package*.json ./
+COPY yarn.lock ./
+
+RUN yarn install
+
+COPY . .
+
+EXPOSE 9000
+
+CMD ["medusa", "start"]

@@ -1,0 +1,19 @@
+# Terraform
+**/.terraform/*
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.*
+**/*.tfvars
+**/*.tfvars.json
+
+# AWS credentials
+**/.aws/credentials
+
+# Environment files
+.env
+*.env
+
+# Node/Medusa
+node_modules/
+dist/
+.cache/
